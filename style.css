@@ -85,3 +85,12 @@ button[class*="rounded"] {
 .callout[data-callout-type="note"] [data-component-part="callout-icon"] { color: #5DA3C6 !important; }
 .callout[data-callout-type="warning"] [data-component-part="callout-icon"] { color: #FFAE00 !important; }
 .callout[data-callout-type="danger"] [data-component-part="callout-icon"] { color: #E13D33 !important; }
+
+/* Dark mode: body copy is Pure White, secondary text Lunar Dust, per the
+   brand rule that text on dark surfaces is white. */
+.dark {
+  --gray-300: 255 255 255;  /* Pure White */
+  --gray-400: 226 222 221;  /* Lunar Dust */
+  --gray-500: 226 222 221;  /* Lunar Dust */
+  --gray-600: 114 119 121;  /* Steel Gray */
+}

@@ -46,6 +46,10 @@ When a figure changes on the marketing site, update it here and bump the
   more reliably than prose.
 - Stable URLs. Never rename a page path once published; add a redirect in
   `docs.json` if you must.
+- Dollar signs: Mintlify parses `$...$` as math. In page bodies write amounts
+  as `&#36;7,500`. In front matter `description`, use at most one `$` per
+  description (say "in USD" and drop the sign on later amounts). Never use
+  `\$`, which leaks into the Markdown export agents read.
 - Every page ends with `<Verified date="Month D, YYYY" />` from
   `snippets/verified.mdx`.
 - Cross-link to the marketing site for positioning and live pricing, and to

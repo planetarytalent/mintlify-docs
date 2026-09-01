@@ -90,6 +90,15 @@ Use these exactly, from the brand glossary:
 Fog background, DM Sans). Flat design: no gradients, no shadows, soft corners,
 pill buttons. Logos in `logo/` are the official lockups; do not recolor.
 
+Fonts: DM Sans (Google) for body and headings via `docs.json`; Moret, self-hosted
+from `fonts/`, is applied to `h1` only in `style.css`. Never use Moret elsewhere.
+
+Icons: Phosphor only, duotone weight, as SVG files in `icons/` filled Graphite
+Core. Reference them by path: `icon="/icons/name.svg"` on cards and anchors,
+`<Icon src="/icons/name.svg" />` inline. Add new ones from
+https://github.com/phosphor-icons/core/tree/main/assets/duotone and change
+`fill="currentColor"` to `fill="#222326"`. Do not use Font Awesome or Lucide names.
+
 ## Planned sections (not yet in navigation)
 
 Add groups to `docs.json` as each ships:

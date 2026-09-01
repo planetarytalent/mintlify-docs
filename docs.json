@@ -15,7 +15,14 @@
     }
   },
   "fonts": {
-    "family": "DM Sans"
+    "heading": {
+      "family": "DM Sans",
+      "weight": 500
+    },
+    "body": {
+      "family": "DM Sans",
+      "weight": 400
+    }
   },
   "favicon": "/favicon.svg",
   "logo": {
@@ -50,12 +57,12 @@
         {
           "anchor": "planetarytalent.com",
           "href": "https://www.planetarytalent.com",
-          "icon": "globe"
+          "icon": "/icons/globe.svg"
         },
         {
           "anchor": "Pricing",
           "href": "https://www.planetarytalent.com/pricing",
-          "icon": "tag"
+          "icon": "/icons/tag.svg"
         }
       ]
     }

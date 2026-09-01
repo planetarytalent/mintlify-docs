@@ -86,9 +86,9 @@ Use these exactly, from the brand glossary:
 
 ## Brand
 
-`style.css` carries the brand tokens (Rocket Flame `#ED6033` primary, Cosmic
-Fog background, DM Sans). Flat design: no gradients, no shadows, soft corners,
-pill buttons. Logos in `logo/` are the official lockups; do not recolor.
+Customization is deliberately minimal: brand colors and DM Sans in `docs.json`,
+nothing else. No `style.css`, no custom JS. Logos in `logo/` are the official
+lockups; do not recolor.
 
 Fonts: DM Sans (Google) for everything, set in `docs.json`. No Moret on the docs
 site.

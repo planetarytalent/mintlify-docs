@@ -27,7 +27,6 @@ getting-started/open-a-role     Tutorial: open a role through to hire
 how-it-works/overview           The seven-step process, timing, terminology
 how-it-works/search-tiers       Pricing, guarantees, role subscriptions, fit
 snippets/verified.mdx           "Last verified" footer used on every page
-style.css                       Brand tokens and flat-design overrides
 logo/, favicon.svg              Official lockups from the brand system
 ```
 

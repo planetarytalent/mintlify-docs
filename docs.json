@@ -38,7 +38,6 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
               "getting-started/open-a-role"
             ]
           },
@@ -86,7 +85,6 @@
       "view",
       "chatgpt",
       "claude",
-      "perplexity",
       "mcp"
     ]
   },

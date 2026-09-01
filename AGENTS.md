@@ -93,11 +93,9 @@ pill buttons. Logos in `logo/` are the official lockups; do not recolor.
 Fonts: DM Sans (Google) for everything, set in `docs.json`. No Moret on the docs
 site.
 
-Icons: Phosphor only, duotone weight, as SVG files in `icons/` filled Graphite
-Core. Reference them by path: `icon="/icons/name.svg"` on cards and anchors,
-`<Icon src="/icons/name.svg" />` inline. Add new ones from
-https://github.com/phosphor-icons/core/tree/main/assets/duotone and change
-`fill="currentColor"` to `fill="#222326"`. Do not use Font Awesome or Lucide names.
+Icons: Tabler, set as the library in `docs.json`, chosen as the closest built-in
+set to the brand's Phosphor. Use Tabler icon names on cards and anchors
+(`icon="rocket"`). Do not add custom SVG icons.
 
 ## Planned sections (not yet in navigation)
 

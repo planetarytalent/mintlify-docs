@@ -57,12 +57,12 @@
         {
           "anchor": "planetarytalent.com",
           "href": "https://www.planetarytalent.com",
-          "icon": "/icons/globe.svg"
+          "icon": "globe"
         },
         {
           "anchor": "Pricing",
           "href": "https://www.planetarytalent.com/pricing",
-          "icon": "/icons/tag.svg"
+          "icon": "tag"
         }
       ]
     }
@@ -143,5 +143,8 @@
   },
   "styling": {
     "latex": false
+  },
+  "icons": {
+    "library": "tabler"
   }
 }

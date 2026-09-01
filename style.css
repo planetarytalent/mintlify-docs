@@ -30,11 +30,6 @@ button[class*="rounded"] {
 
 
 
-/* Custom Phosphor icons load as <img>, so they cannot inherit color.
-   They are filled Graphite Core; invert them in dark mode. */
-.dark img[src^="/icons/"] {
-  filter: invert(1);
-}
 
 /* Neutral scale: Mintlify derives greys from the primary color. Remap every
    step to the six brand neutrals so nothing off-palette appears. RGB triples,

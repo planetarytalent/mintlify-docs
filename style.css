@@ -39,15 +39,6 @@ button[class*="rounded"] {
   background: var(--pt-rocket-flame-20) !important;
 }
 
-/* Moret: brand display serif, page titles only (h1). Body and all other
-   headings stay DM Sans per the brand rules. */
-@font-face {
-  font-family: "Moret";
-  src: url("/fonts/Moret-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 h1 {
   font-family: "Moret", "Cormorant Garamond", Georgia, serif !important;
   font-weight: 400 !important;

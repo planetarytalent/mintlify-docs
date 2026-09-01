@@ -1,55 +1,42 @@
-# Mintlify Starter Kit
+# Planetary Talent docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+Public documentation for Planetary Talent, served at docs.planetarytalent.com.
+Built on [Mintlify](https://mintlify.com), deployed from `main`.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Audience: founders and hiring managers, and the answer engines and agents they
+ask for hiring help. Internal and developer docs live in Notion and in each app
+repo, not here.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
-
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+## Develop
 
 ```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
 npm i -g mint
+mint dev            # preview at http://localhost:3000
+mint broken-links   # check before opening a PR
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Pages are MDX files with front matter. Navigation and site config are in
+`docs.json`. Read `AGENTS.md` for terminology, style, and the source-of-truth
+rules before writing a page.
+
+## Layout
 
 ```
-mint dev
+index.mdx                       Home
+getting-started/open-a-role     Tutorial: open a role through to hire
+how-it-works/overview           The seven-step process, timing, terminology
+how-it-works/search-tiers       Pricing, guarantees, role subscriptions, fit
+snippets/verified.mdx           "Last verified" footer used on every page
+style.css                       Brand tokens and flat-design overrides
+logo/, favicon.svg              Official lockups from the brand system
 ```
 
-View your local preview at `http://localhost:3000`.
+Planned sections (MCP server, CLI, API reference, comparisons, talent) are
+listed in `AGENTS.md`.
 
-## Publishing changes
+## Deploy
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Connect this repo in the Mintlify dashboard and set the custom domain to
+`docs.planetarytalent.com`. Mintlify publishes `/llms.txt` and
+`/llms-full.txt` automatically. After the first deploy, add the docs URL to the
+marketing site's `llms.txt` so agents can find it from planetarytalent.com.

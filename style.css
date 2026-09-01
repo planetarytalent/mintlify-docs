@@ -1,0 +1,40 @@
+/* Planetary Talent brand tokens for the docs site.
+   Source: planetary-talent-design skill, colors_and_type.css.
+   Flat design: no gradients, no shadows, soft corners, pill buttons. */
+:root {
+  --pt-cosmic-fog: #F7F3F2;
+  --pt-lunar-dust: #E2DEDD;
+  --pt-crater-shadow: #4B4C51;
+  --pt-steel-gray: #727779;
+  --pt-polished-steel: #B5BBBF;
+  --pt-graphite-core: #222326;
+  --pt-deep-void: #121314;
+  --pt-rocket-flame: #ED6033;
+  --pt-galactic-seafoam: #5DC6AD;
+  --pt-solar-gold: #FFAE00;
+  --pt-rocket-flame-20: rgba(237, 96, 51, 0.20);
+  --pt-galactic-seafoam-20: rgba(93, 198, 173, 0.20);
+}
+
+/* Pill buttons, no shadow. */
+#navbar a[class*="rounded"],
+button[class*="rounded"] {
+  border-radius: 1000px !important;
+  box-shadow: none !important;
+}
+
+/* Cards: 16px radius, hairline border, no shadow. */
+[class*="card"],
+.card {
+  border-radius: 16px !important;
+  box-shadow: none !important;
+}
+
+/* Callouts use 20% tints, never gradients. */
+.callout[class*="tip"],
+.callout[class*="info"] {
+  background: var(--pt-galactic-seafoam-20) !important;
+}
+.callout[class*="warning"] {
+  background: var(--pt-rocket-flame-20) !important;
+}

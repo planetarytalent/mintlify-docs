@@ -1,53 +1,76 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Planetary Talent",
+  "description": "How to hire with Planetary Talent, the hiring accelerator for founder-led companies. Open a role, review a shortlist of interview-ready humans, and hire anywhere on Earth.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ED6033",
+    "light": "#ED6033",
+    "dark": "#B24321"
+  },
+  "background": {
+    "color": {
+      "light": "#F7F3F2",
+      "dark": "#121314"
+    }
+  },
+  "fonts": {
+    "family": "DM Sans"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://www.planetarytalent.com"
+  },
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "index",
+              "getting-started/open-a-role"
+            ]
+          },
+          {
+            "group": "How it works",
+            "pages": [
+              "how-it-works/overview",
+              "how-it-works/search-tiers"
+            ]
+          }
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "planetarytalent.com",
+          "href": "https://www.planetarytalent.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Pricing",
+          "href": "https://www.planetarytalent.com/pricing",
+          "icon": "tag"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Apply for a role",
+        "href": "https://app.planetarytalent.com/apply"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Start hiring",
+      "href": "https://www.planetarytalent.com/start-hiring"
     }
   },
   "contextual": {
@@ -57,16 +80,40 @@
       "chatgpt",
       "claude",
       "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "mcp"
     ]
+  },
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "og:site_name": "Planetary Talent docs",
+      "og:type": "website",
+      "twitter:site": "@planetarytal"
+    }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "linkedin": "https://linkedin.com/company/planetarytalent",
+      "x": "https://x.com/planetarytal",
+      "instagram": "https://instagram.com/planetarytalent"
+    },
+    "links": [
+      {
+        "header": "Product",
+        "items": [
+          { "label": "Start hiring", "href": "https://www.planetarytalent.com/start-hiring" },
+          { "label": "Pricing", "href": "https://www.planetarytalent.com/pricing" },
+          { "label": "FAQs", "href": "https://www.planetarytalent.com/faqs" }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          { "label": "Values", "href": "https://www.planetarytalent.com/values" },
+          { "label": "Blog", "href": "https://www.planetarytalent.com/blog" },
+          { "label": "Contact", "href": "mailto:hello@planetarytalent.com" }
+        ]
+      }
+    ]
   }
 }

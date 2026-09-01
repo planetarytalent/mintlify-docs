@@ -30,24 +30,60 @@ button[class*="rounded"] {
   box-shadow: none !important;
 }
 
-/* Callouts use 20% tints, never gradients. */
-.callout[class*="tip"],
-.callout[class*="info"] {
-  background: var(--pt-galactic-seafoam-20) !important;
-}
-.callout[class*="warning"] {
-  background: var(--pt-rocket-flame-20) !important;
-}
 
-h1 {
-  font-family: "Moret", "Cormorant Garamond", Georgia, serif !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.01em;
-  line-height: 1.05;
-}
 
 /* Custom Phosphor icons load as <img>, so they cannot inherit color.
    They are filled Graphite Core; invert them in dark mode. */
 .dark img[src^="/icons/"] {
   filter: invert(1);
 }
+
+/* Neutral scale: Mintlify derives greys from the primary color. Remap every
+   step to the six brand neutrals so nothing off-palette appears. RGB triples,
+   as Mintlify expects. */
+:root {
+  --gray-50:  255 255 255;  /* Pure White */
+  --gray-100: 247 243 242;  /* Cosmic Fog */
+  --gray-200: 226 222 221;  /* Lunar Dust */
+  --gray-300: 226 222 221;  /* Lunar Dust */
+  --gray-400: 114 119 121;  /* Steel Gray */
+  --gray-500: 114 119 121;  /* Steel Gray */
+  --gray-600: 114 119 121;  /* Steel Gray */
+  --gray-700: 34 35 38;     /* Graphite Core */
+  --gray-800: 34 35 38;     /* Graphite Core */
+  --gray-900: 34 35 38;     /* Graphite Core */
+  --gray-950: 18 19 20;     /* Deep Void */
+}
+
+/* Callouts: 20% tints of brand colors, Graphite Core text in light mode,
+   Pure White in dark. Rocket Flame is never a warning. */
+.callout[data-callout-type="tip"],
+.callout[data-callout-type="check"] {
+  background: rgba(93, 198, 173, 0.20) !important;
+  border-color: #5DC6AD !important;
+}
+.callout[data-callout-type="info"],
+.callout[data-callout-type="note"] {
+  background: rgba(93, 163, 198, 0.20) !important;
+  border-color: #5DA3C6 !important;
+}
+.callout[data-callout-type="warning"] {
+  background: rgba(255, 174, 0, 0.20) !important;
+  border-color: #FFAE00 !important;
+}
+.callout[data-callout-type="danger"] {
+  background: rgba(225, 61, 51, 0.20) !important;
+  border-color: #E13D33 !important;
+}
+.callout [data-component-part="callout-content"] {
+  color: #222326 !important;
+}
+.dark .callout [data-component-part="callout-content"] {
+  color: #FFFFFF !important;
+}
+.callout[data-callout-type="tip"] [data-component-part="callout-icon"],
+.callout[data-callout-type="check"] [data-component-part="callout-icon"] { color: #5DC6AD !important; }
+.callout[data-callout-type="info"] [data-component-part="callout-icon"],
+.callout[data-callout-type="note"] [data-component-part="callout-icon"] { color: #5DA3C6 !important; }
+.callout[data-callout-type="warning"] [data-component-part="callout-icon"] { color: #FFAE00 !important; }
+.callout[data-callout-type="danger"] [data-component-part="callout-icon"] { color: #E13D33 !important; }

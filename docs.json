@@ -101,19 +101,40 @@
       {
         "header": "Product",
         "items": [
-          { "label": "Start hiring", "href": "https://www.planetarytalent.com/start-hiring" },
-          { "label": "Pricing", "href": "https://www.planetarytalent.com/pricing" },
-          { "label": "FAQs", "href": "https://www.planetarytalent.com/faqs" }
+          {
+            "label": "Start hiring",
+            "href": "https://www.planetarytalent.com/start-hiring"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://www.planetarytalent.com/pricing"
+          },
+          {
+            "label": "FAQs",
+            "href": "https://www.planetarytalent.com/faqs"
+          }
         ]
       },
       {
         "header": "Company",
         "items": [
-          { "label": "Values", "href": "https://www.planetarytalent.com/values" },
-          { "label": "Blog", "href": "https://www.planetarytalent.com/blog" },
-          { "label": "Contact", "href": "mailto:hello@planetarytalent.com" }
+          {
+            "label": "Values",
+            "href": "https://www.planetarytalent.com/values"
+          },
+          {
+            "label": "Blog",
+            "href": "https://www.planetarytalent.com/blog"
+          },
+          {
+            "label": "Contact",
+            "href": "mailto:hello@planetarytalent.com"
+          }
         ]
       }
     ]
+  },
+  "styling": {
+    "latex": false
   }
 }

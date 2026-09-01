@@ -5,3 +5,6 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Agent guide is for contributors, not a docs page
+AGENTS.md
